@@ -1,0 +1,27 @@
+//unoptimized code
+pragma solidity 0.7.0;
+
+contract C {
+      function p12(uint x,uint y) public {
+        for(uint i = 0 ; i < 100 ; i++){
+            if(x>0) 
+                y+=x;
+                x--;
+        }    
+    }
+}
+
+
+
+//optimized code
+pragma solidity ^ 0.4.0;
+
+contract A {
+    
+    function onlyloop(uint x,uint y) returns(uint){
+        if(x>0) 
+        for(int i = 0;i<100;i++)
+            y+=x;
+        return y;
+    }
+}
