@@ -1,0 +1,14 @@
+//unoptimized code
+pragma solidity 0.7.0;
+
+contract p2 {
+  uint256 someVariable2=0 ;
+}
+
+
+//optimized code
+pragma solidity 0.7.0;
+
+contract p2 {
+  uint256 someVariable2 ;
+}
