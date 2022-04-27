@@ -1,0 +1,16 @@
+//unoptimized code
+pragma solidity 0.7.0;
+
+contract p3 {
+    string c= "usd bytes32 not string";
+}
+
+
+
+//optimized code
+pragma solidity 0.7.0;
+
+contract p3 {
+    bytes32 c= "usd bytes32 not string";
+}
+
