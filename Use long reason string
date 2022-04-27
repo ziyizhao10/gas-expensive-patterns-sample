@@ -9,7 +9,7 @@ contract A {
 
 
 
-//unoptimized code
+//optimized code
 pragma solidity 0.7.0;
 
 contract A {
