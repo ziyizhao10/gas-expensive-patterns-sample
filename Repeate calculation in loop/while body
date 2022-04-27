@@ -1,0 +1,34 @@
+//unoptimized code
+pragma solidity 0.7.0;
+
+contract C {
+    uint a = 1;
+    uint b = 2;
+    function p10(uint x) public  {
+        uint sum = 0;
+        uint i = 0;
+        while(i <= x) {
+            sum = sum + a * b;
+            i++;
+        }
+    }
+}
+
+
+
+//optimized code
+pragma solidity 0.7.0;
+
+contract C {
+    uint a = 1;
+    uint b = 2;
+    function p10(uint x) public  {
+        uint sum = 0;
+        uint i = 0;
+        uint c= a * b ;
+        while(i <= x) {
+            sum = sum + c ;
+            i++;
+        }
+    }
+}
