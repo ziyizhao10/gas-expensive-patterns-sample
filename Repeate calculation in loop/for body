@@ -6,7 +6,7 @@ contract C {
     uint b = 2;
     function p10() public  {
         uint sum = 0;
-        for(uint i = 0; i <= x; i++) {
+        for(uint i = 0; i <= 100; i++) {
             sum = sum + a * b;
         }
     }
@@ -22,8 +22,10 @@ contract C {
     uint b = 2;
     function p10() public  {
         uint sum = 0;
-        for(uint i = 0; i <= x; i++) {
+        uint c = a * b;
+        for(uint i = 0; i <= 100; i++) {
             sum = sum + c;
         }
     }
 }
+
