@@ -3,7 +3,6 @@ pragma solidity 0.7.0;
 
 contract p1 {
         byte[] someVariable1;
-
 }   
 
 
@@ -11,6 +10,5 @@ contract p1 {
 pragma solidity 0.7.0;
 
 contract p1 {
-        byte[] someVariable1;
-
+        bytes someVariable1;
 }   
