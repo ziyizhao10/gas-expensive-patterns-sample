@@ -3,12 +3,13 @@ pragma solidity 0.7.0;
 
 contract C {
     uint[] x = new uint[](100);
-      function p11() public view {
-         uint y = x.length;
-         for (uint i = 0; i < y; i++){
-         }
+    function p12(address account) public {
+        for (uint i = 0; i < 100; i++) {
+                x[i] = x[x.length - 1];
+        }
     }
 }
+
 
 
 
@@ -16,11 +17,12 @@ contract C {
 pragma solidity 0.7.0;
 
 contract C {
-    function p12() public {
-        uint[] memory x = new uint[](100);
-        uint y = x.length ;
-        for(int i = 100;i>0;i--){
-            y = y-1;
+    uint[] x = new uint[](100);
+    function p12(address account) public {
+        uint y = x.length;
+        for (uint i = 0; i < 100; i++) {
+                x[i] = x[y - 1] ;
         }
     }
 }
+
